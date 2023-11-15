@@ -1,15 +1,20 @@
 /* 
 - Mobile: 375px
 - Desktop: 1440px
+
+- White: hsl(0, 0%, 100%)
+- Light grayish violet: hsl(270, 3%, 87%)
+- Dark grayish violet: hsl(279, 6%, 55%)
+- Very dark violet: hsl(278, 68%, 11%)
+
 */
 
 body {
-  color: rgb(255, 242, 158);
+  color: black;
   font-size: 18px;
   font-family: "Space Grotesk", sans-serif;
-
-  /* background-image: url(/images/bg-main-desktop.png);
-  background-repeat: no-repeat; */
+  background-image: url(/images/bg-main-desktop.png);
+  background-repeat: no-repeat;
 }
 .attribution {
   font-size: 11px;
@@ -24,15 +29,27 @@ body {
   justify-content: space-between;
 }
 form {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 20px;
-  max-width: 100%;
-  margin: 0 auto;
+  max-width: 350px;
+  margin: 150px auto;
+  margin-left: -100px;
+  color: hsl(278, 68%, 11%);
 }
 form input {
   padding: 5px;
-  width: 100%;
+  width: 97%;
   margin: 5px 0px 15px;
+  border: 1px solid hsl(270, 3%, 87%);
+  /* White: hsl(0, 0%, 100%)
+- Light grayish violet: hsl(270, 3%, 87%)
+- Dark grayish violet: hsl(279, 6%, 55%)
+- Very dark violet: hsl(278, 68%, 11%) */
+  border-radius: 5px;
+}
+
+#cvc {
+  width: 90%;
 }
 .exp-date-input {
   width: 20%;
@@ -40,6 +57,8 @@ form input {
 
 form label {
   display: flex;
+  font-size: 0.8rem;
+  letter-spacing: 1.2px;
 }
 
 .line3 {
@@ -49,20 +68,48 @@ button {
   width: 100%;
   padding: 10px;
   margin: 15px 0px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(278, 68%, 11%);
+  border-radius: 5px;
 }
-.interactive-card {
-  background-image: url(/images/bg-main-desktop.png);
-  background-repeat: no-repeat;
+.interactive-card-front {
+  /* background-image: url(/images/bg-main-desktop.png);
+  background-repeat: no-repeat; */
   height: 100vh;
   position: relative;
+  top: 70px;
+  left: 170px;
 }
-.text-card {
-  position: absolute;
+.interactive-card-back {
+  position: relative;
+  top: 340px;
+  left: -150px;
+}
 
+.interactive-card-back img,
+.interactive-card-front img {
+  box-shadow: 15px 15px 55px rgba(0, 0, 0, 0.2);
+}
+
+.text-card-front {
+  position: absolute;
   width: 100%;
+  color: white;
+}
+.text-card-back {
+  position: absolute;
+  width: 100%;
+  top: 90px;
+  left: 350px;
+  color: white;
 }
 .text-inline {
   display: flex;
-
   justify-content: space-around;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    color: palegreen;
+  }
 }
