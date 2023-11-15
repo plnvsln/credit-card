@@ -1,0 +1,68 @@
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+body {
+  color: rgb(255, 242, 158);
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+
+  /* background-image: url(/images/bg-main-desktop.png);
+  background-repeat: no-repeat; */
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+form {
+  border: 1px solid black;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+form input {
+  padding: 5px;
+  width: 100%;
+  margin: 5px 0px 15px;
+}
+.exp-date-input {
+  width: 20%;
+}
+
+form label {
+  display: flex;
+}
+
+.line3 {
+  display: flex;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0px;
+}
+.interactive-card {
+  background-image: url(/images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+.text-card {
+  position: absolute;
+
+  width: 100%;
+}
+.text-inline {
+  display: flex;
+
+  justify-content: space-around;
+}

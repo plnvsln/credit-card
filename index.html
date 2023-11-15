@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="interactive-card">
+        <div class="text-card">
+          <p>0000 0000 0000 0000</p>
+          <div class="text-inline">
+            <p>Jane Appleseed</p>
+            <p>00/00</p>
+          </div>
+        </div>
+        <img src="/images/bg-card-front.png" alt="" />
+      </div>
+
+      <form>
+        <div class="line1">
+          <label for="name">Cardholder Name</label>
+          <input type="text" id="name" placeholder="e.g. Jane Appleseed" />
+        </div>
+        <div class="line2">
+          <label for="card">Card Number</label>
+          <input type="text" id="card" placeholder="e.g. 1234 5678 9123 0000" />
+        </div>
+        <div class="line3">
+          <div class="section">
+            <label for="date">Exp. Date (MM/YY) </label>
+            <input
+              type="number"
+              class="exp-date-input"
+              id="date"
+              placeholder="MM"
+            />
+            <input
+              type="number"
+              class="exp-date-input"
+              id="date"
+              placeholder="YY"
+            />
+          </div>
+          <div class="section">
+            <label for="cvc">CVC</label>
+            <input type="text" id="cvc" placeholder="e.g. 123 " />
+          </div>
+        </div>
+        <div class="line4">
+          <button>Confirm</button>
+        </div>
+      </form>
+
+      <!-- Completed state start  <p>0000 0000 0000 0000 Jane Appleseed 00/00 000</p>
+      Thank you! We've added your card details Continue-->
+    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+  </body>
+</html>
