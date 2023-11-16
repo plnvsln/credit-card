@@ -37,24 +37,63 @@ form {
   margin: 150px auto;
   margin-left: -100px;
   color: hsl(278, 68%, 11%);
+  /*akro*/
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
+
+.line1,
+.line2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card-info-container {
+  display: flex;
+  gap: 20px;
+}
+.card-info-box--2,
+.card-info-input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card-info-inputs {
+  display: flex;
+  gap: 15px;
+}
+.card-info-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info-box--1 input {
+  width: 60px;
+}
+.card-info-box--1 label {
+  margin-bottom: 8px;
+}
+.card-info-box--1 small {
+  width: 90px;
+}
+.card-info-box--2 input {
+  width: 100%;
+}
+/* akro */
 form input {
   padding: 10px 5px;
-  width: 100%;
-  margin: 5px 0px 15px;
+  /* akro width: 100%;
+  margin: 5px 0px 15px; */
   border: 1px solid hsl(270, 3%, 87%);
-  /* White: hsl(0, 0%, 100%)
-- Light grayish violet: hsl(270, 3%, 87%)
-- Dark grayish violet: hsl(279, 6%, 55%)
-- Very dark violet: hsl(278, 68%, 11%) */
   border-radius: 5px;
 }
 form input::placeholder {
   color: hsl(270, 3%, 87%);
 }
 
-.exp-date-input {
-  width: 20%;
+.card-info-box--1 input::placeholder {
+  text-align: center;
 }
 
 form label {
@@ -62,9 +101,13 @@ form label {
   font-size: 0.8rem;
 }
 
-.line3 {
-  display: flex;
+/* error messages */
+small {
+  font-size: 0.6rem;
+  color: red;
+  display: block;
 }
+
 button {
   width: 100%;
   padding: 10px;
@@ -73,6 +116,7 @@ button {
   background-color: hsl(278, 68%, 11%);
   border-radius: 5px;
 }
+
 .interactive-card-front {
   /* background-image: url(/images/bg-main-desktop.png);
   background-repeat: no-repeat; */
@@ -113,13 +157,6 @@ button {
 .text-inline {
   display: flex;
   justify-content: space-around;
-}
-/* error messages */
-small {
-  font-size: 0.6rem;
-  color: red;
-  margin: -10px 5px 5px;
-  display: block;
 }
 
 @media only screen and (max-width: 375px) {
