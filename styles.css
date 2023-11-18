@@ -29,6 +29,7 @@ body {
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 form {
   /* border: 1px solid black; */
@@ -161,6 +162,53 @@ button {
 
 @media only screen and (max-width: 375px) {
   body {
-    color: palegreen;
+    background-size: 500px 260px;
+  }
+  img {
+    width: 100%;
+  }
+  .interactive-card-front {
+    position: relative;
+    top: 139px;
+    left: 0px;
+    color: white;
+    margin: 0px auto;
+    padding: 0px auto;
+    z-index: 1;
+    height: 50vh;
+  }
+
+  #card-front-number {
+    font-size: 1rem;
+    margin: 10px auto 0px auto;
+  }
+  .interactive-card-back {
+    position: relative;
+    top: -350px;
+    left: 70px;
+    margin: 0px auto;
+    padding: 0px auto;
+    height: 0px;
+  }
+  .text-card-back {
+    position: relative;
+    width: 100%;
+    top: 118px;
+    left: 226px;
+    color: rgb(193, 71, 71);
+    text-align: end;
+  }
+  .text-card-back p,
+  .text-inline p {
+    font-size: 0.8rem;
+  }
+
+  form {
+    margin: 60px auto;
+  }
+  .attribution,
+  .attribution a {
+    font-size: 0.7rem;
+    text-align: center;
   }
 }
