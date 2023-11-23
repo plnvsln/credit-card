@@ -108,7 +108,7 @@ small {
   color: red;
   display: none;
 }
-.show-error {
+.show-error small {
   display: block;
 }
 
