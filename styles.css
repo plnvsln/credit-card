@@ -119,11 +119,12 @@ button {
   color: hsl(0, 0%, 100%);
   background-color: hsl(278, 68%, 11%);
   border-radius: 5px;
+  cursor: pointer;
+  z-index: 100;
 }
 /* HOVER DOESNT WORK ????*/
 
 button:hover {
-  cursor: pointer;
   background-color: rgb(145, 255, 0);
 }
 

@@ -1,7 +1,7 @@
 //show error msg
 
 function showErrorMsg(event) {
-  event.preventDefault;
+  event.preventDefault();
   let cardInput = document.getElementById("card");
   let dateMonthInput = document.getElementById("date");
   let dateYearInput = document.getElementById("date-YY");
@@ -11,16 +11,17 @@ function showErrorMsg(event) {
   let box3 = document.querySelector(".card-info-input-2");
   let box4 = document.querySelector(".card-info-box--2");
   //   alert("hi error");
-  if (cardInput.value) {
-    ("if the letters entered = show mssg ONLY NUMBERS");
+  if (cardInput.value !== Number) {
+    console.log("not number");
+    box1.classList.add("show-error");
   }
-  if (dateMonthInput.value == null) {
+  if (dateMonthInput.value == 0) {
     box2.classList.add("show-error");
   }
-  if (dateYearInput.value == null) {
+  if (dateYearInput.value == 0) {
     box3.classList.add("show-error");
   }
-  if (cvcInput.value == null) {
+  if (cvcInput.value == 0) {
     box4.classList.add("show-error");
   }
 }
