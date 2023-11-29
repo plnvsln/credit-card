@@ -14,6 +14,18 @@
   font-size: 18px;
   letter-spacing: 1px;
 }
+h1 {
+  font-size: 1.7rem;
+  text-align: center;
+}
+.success-msg {
+  color: hsl(279, 6%, 55%);
+  margin: 0 auto;
+}
+.success-img {
+  margin: 0 auto;
+  width: 30%;
+}
 body {
   background-image: url(/images/bg-main-desktop.png);
   background-repeat: no-repeat;
@@ -122,11 +134,10 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
-/* HOVER DOESNT WORK ????*/
 
-button:hover {
-  background-color: rgb(145, 255, 0);
-}
+/* button:hover {
+  
+} */
 
 .interactive-card-front {
   /* background-image: url(/images/bg-main-desktop.png);
