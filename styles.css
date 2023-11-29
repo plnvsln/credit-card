@@ -42,6 +42,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: 1;
 }
 
 .line1,
@@ -120,7 +121,6 @@ button {
   background-color: hsl(278, 68%, 11%);
   border-radius: 5px;
   cursor: pointer;
-  z-index: 100;
 }
 /* HOVER DOESNT WORK ????*/
 

@@ -39,8 +39,10 @@
           </svg>
           <p id="card-front-number">0000 0000 0000 0000</p>
           <div class="text-inline">
-            <p>Jane Appleseed</p>
-            <p>00/00</p>
+            <p id="name-on-card">Jane Appleseed</p>
+            <p>
+              <span id="mm-on-card">00</span> / <span id="yy-on-card">00</span>
+            </p>
           </div>
         </div>
         <img src="/images/bg-card-front.png" alt="" />
@@ -48,7 +50,7 @@
 
       <div class="interactive-card-back">
         <div class="text-card-back">
-          <p>000</p>
+          <p id="cvc-back">000</p>
         </div>
         <img src="/images/bg-card-back.png" alt="" />
       </div>
@@ -60,8 +62,12 @@
         </div>
         <div class="line2">
           <label for="card">CARD NUMBER</label>
-          <input type="text" id="card" placeholder="e.g. 1234 5678 9123 0000" />
-          <small>Wrong format, numbers only</small>
+          <input
+            type="number"
+            id="card"
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
+          <small>Can't be blank</small>
         </div>
 
         <div class="card-info-container">
